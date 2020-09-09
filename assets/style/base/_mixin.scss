@@ -1,0 +1,6 @@
+@mixin centerAll($X, $Y) {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate($X, $Y);
+  transform: translate($X, $Y);
+}

@@ -1,0 +1,51 @@
+header {
+  position: relative;
+  min-height: 100vh;
+  background: url("/assets/image/shape/shape-50.svg") right no-repeat;
+
+  .navbar {
+    background: #fff;
+    box-shadow: 1px 1px 10px rgb(184, 184, 184);
+    transition: 0.5s;
+  }
+  .navbar-brand {
+    &:hover {
+      opacity: 0.8;
+    }
+    .logo {
+      width: 150px;
+    }
+  }
+  .nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    color: $color-dark-1;
+  }
+  button {
+    width: 110px;
+    height: 40px;
+    &:focus {
+      outline: 0;
+    }
+  }
+  .nav-link:hover {
+    color: $color-red-1;
+  }
+
+  .banner {
+    position: absolute;
+    margin-top: 2rem;
+    @include centerAll(-50%, -70%);
+    h3 {
+      line-height: 2rem;
+    }
+    h6 {
+      line-height: 1.7rem;
+    }
+    .line-1 {
+      position: absolute;
+      top: -60px;
+      z-index: -1;
+    }
+  }
+}

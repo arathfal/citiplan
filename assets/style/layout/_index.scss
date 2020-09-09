@@ -1,0 +1,111 @@
+.title {
+  color: $color-dark-1;
+  span {
+    color: $color-red-1;
+  }
+}
+.subtitle {
+  line-height: 2.5rem;
+}
+.mb-80 {
+  margin-bottom: 80px;
+}
+.button-slide {
+  position: relative;
+  border-radius: 50px;
+  background: $color-red-1;
+  color: #fff;
+  transition: 0.5s;
+  border: none;
+  overflow: hidden;
+  z-index: 0;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    transition: 0.5s;
+    z-index: -1;
+  }
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+  }
+  &:hover {
+    background: #fff;
+    color: $color-red-1;
+    border: 1px solid $color-red-1;
+  }
+  &:hover::before,
+  &:hover::after {
+    width: 50%;
+  }
+}
+.button-slide-2 {
+  position: relative;
+  background: #fff;
+  color: $color-red-1;
+  border: 1px solid $color-red-1;
+  transition: 0.5s;
+  overflow: hidden;
+  z-index: 0;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: $color-red-1;
+    transition: 0.5s;
+    z-index: -1;
+  }
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+  }
+  &:hover {
+    background: $color-red-1;
+    color: #fff;
+  }
+  &:hover::before,
+  &:hover::after {
+    width: 50%;
+  }
+}
+#whatWeDo {
+  position: relative;
+  background: rgb(247, 247, 247) url("/assets/image/shape/shape-15.svg")
+    no-repeat;
+
+  button {
+    width: 170px;
+    height: 55px;
+    &:focus {
+      outline: 0;
+    }
+  }
+  .what-we-do-shape {
+    right: 0;
+    opacity: 0.5;
+  }
+  .what-we-do-content {
+    position: relative;
+    z-index: 1;
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+#whyUs {
+  position: relative;
+  background: white url("/assets//image/shape/shape-31.svg") no-repeat;
+}

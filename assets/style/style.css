@@ -1,0 +1,207 @@
+@import url("/vendor/bootstrap-4.3.1/css/bootstrap.min.css");
+@import url("/vendor/fontawesome/css/all.min.css");
+@import url("/vendor/animate.css");
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins/Poppins-Regular.ttf");
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.txt-primary {
+  color: #c40000;
+}
+
+.txt-red {
+  color: #ff4d4d;
+}
+
+header {
+  position: relative;
+  min-height: 100vh;
+  background: url("/assets/image/shape/shape-50.svg") right no-repeat;
+}
+header .navbar {
+  background: #fff;
+  box-shadow: 1px 1px 10px #b8b8b8;
+  transition: 0.5s;
+}
+header .navbar-brand:hover {
+  opacity: 0.8;
+}
+header .navbar-brand .logo {
+  width: 150px;
+}
+header .nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: #888888;
+}
+header button {
+  width: 110px;
+  height: 40px;
+}
+header button:focus {
+  outline: 0;
+}
+header .nav-link:hover {
+  color: #ff4d4d;
+}
+header .banner {
+  position: absolute;
+  margin-top: 2rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -70%);
+  transform: translate(-50%, -70%);
+}
+header .banner h3 {
+  line-height: 2rem;
+}
+header .banner h6 {
+  line-height: 1.7rem;
+}
+header .banner .line-1 {
+  position: absolute;
+  top: -60px;
+  z-index: -1;
+}
+
+.title {
+  color: #888888;
+}
+.title span {
+  color: #ff4d4d;
+}
+
+.subtitle {
+  line-height: 2.5rem;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.button-slide {
+  position: relative;
+  border-radius: 50px;
+  background: #ff4d4d;
+  color: #fff;
+  transition: 0.5s;
+  border: none;
+  overflow: hidden;
+  z-index: 0;
+}
+.button-slide::before, .button-slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  transition: 0.5s;
+  z-index: -1;
+}
+.button-slide::before {
+  left: 0;
+}
+.button-slide::after {
+  right: 0;
+}
+.button-slide:hover {
+  background: #fff;
+  color: #ff4d4d;
+  border: 1px solid #ff4d4d;
+}
+.button-slide:hover::before, .button-slide:hover::after {
+  width: 50%;
+}
+
+.button-slide-2 {
+  position: relative;
+  background: #fff;
+  color: #ff4d4d;
+  border: 1px solid #ff4d4d;
+  transition: 0.5s;
+  overflow: hidden;
+  z-index: 0;
+}
+.button-slide-2::before, .button-slide-2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #ff4d4d;
+  transition: 0.5s;
+  z-index: -1;
+}
+.button-slide-2::before {
+  left: 0;
+}
+.button-slide-2::after {
+  right: 0;
+}
+.button-slide-2:hover {
+  background: #ff4d4d;
+  color: #fff;
+}
+.button-slide-2:hover::before, .button-slide-2:hover::after {
+  width: 50%;
+}
+
+#whatWeDo {
+  position: relative;
+  background: #f7f7f7 url("/assets/image/shape/shape-15.svg") no-repeat;
+}
+#whatWeDo button {
+  width: 170px;
+  height: 55px;
+}
+#whatWeDo button:focus {
+  outline: 0;
+}
+#whatWeDo .what-we-do-shape {
+  right: 0;
+  opacity: 0.5;
+}
+#whatWeDo .what-we-do-content {
+  position: relative;
+  z-index: 1;
+}
+#whatWeDo .what-we-do-content p {
+  font-size: 14px;
+}
+
+#whyUs {
+  position: relative;
+  background: white url("/assets//image/shape/shape-31.svg") no-repeat;
+}
+
+@media only screen and (max-width: 991px) {
+  header .banner {
+    margin-top: 7rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header .banner {
+    margin-top: 15em;
+  }
+
+  #ourService {
+    margin-top: 15rem;
+  }
+}
+@media only screen and (max-width: 586px) {
+  header .banner .line-1 {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
