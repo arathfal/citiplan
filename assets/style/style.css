@@ -183,6 +183,9 @@ header .banner .line-1 {
   position: relative;
   background: white url("/assets//image/shape/shape-31.svg") no-repeat;
 }
+#whyUs h6 {
+  line-height: 1.5rem;
+}
 
 @media only screen and (max-width: 991px) {
   header .banner {
