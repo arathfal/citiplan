@@ -190,7 +190,7 @@ a:hover {
 }
 #recentProject .card {
   border-radius: 10px;
-  border: 1px solid #ff4d4d;
+  height: 200px;
 }
 #recentProject .title-card {
   font-size: 14px;
