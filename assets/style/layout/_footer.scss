@@ -1,0 +1,49 @@
+footer {
+  text-align: left;
+  border-top: 1px solid $color-dark-3;
+  a {
+    transition: 0.5s;
+  }
+
+  .top-footer {
+    .logo {
+      img {
+        width: 210px;
+      }
+    }
+    .footer-title,
+    .numb {
+      color: $color-dark-2;
+      font-size: 18px;
+    }
+    a.footer-menu,
+    a.email,
+    .footer-menu {
+      color: $color-dark-1;
+      font-size: 15px;
+    }
+    li {
+      list-style: none;
+      display: inline;
+    }
+  }
+  .bottom-footer {
+    background: $color-gray-1;
+
+    h6,
+    a {
+      color: $color-dark-1;
+    }
+    .faq {
+      font-size: 13px;
+    }
+  }
+  a.email,
+  a.footer-menu,
+  a.numb,
+  a.faq {
+    &:hover {
+      color: $color-red-1;
+    }
+  }
+}

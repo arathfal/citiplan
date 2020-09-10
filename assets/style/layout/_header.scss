@@ -5,9 +5,9 @@ header {
 
   .navbar {
     background: #fff;
-    box-shadow: 1px 1px 10px rgb(184, 184, 184);
     transition: 0.5s;
   }
+
   .navbar-brand {
     &:hover {
       opacity: 0.8;
@@ -28,14 +28,11 @@ header {
       outline: 0;
     }
   }
-  .nav-link:hover {
-    color: $color-red-1;
-  }
 
   .banner {
     position: absolute;
     margin-top: 2rem;
-    @include centerAll(-50%, -70%);
+    @include centerAll(-50%, -65%);
     h3 {
       line-height: 2rem;
     }
@@ -44,7 +41,7 @@ header {
     }
     .line-1 {
       position: absolute;
-      top: -60px;
+      top: -20px;
       z-index: -1;
     }
   }
