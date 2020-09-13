@@ -24,6 +24,19 @@ figure {
 @import "./base/mixin";
 @import "./layout/header";
 @import "./layout/index";
-@import "./layout/service";
+@import "./layout/company";
 @import "./layout/footer";
 @import "./layout/responsive";
+
+.title {
+  color: $color-dark-1;
+  span {
+    color: $color-red-1;
+  }
+}
+.subtitle {
+  line-height: 2.5rem;
+}
+a:hover {
+  color: $color-red-1;
+}

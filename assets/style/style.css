@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("/vendor/bootstrap-4.3.1/css/bootstrap.min.css");
 @import url("/vendor/fontawesome/css/all.min.css");
 @import url("/vendor/slick-1.8.1/slick/slick.css");
@@ -106,21 +107,6 @@ header .page-wrapper .breadcrumb-item + .breadcrumb-item::before {
 .shrink .navbar {
   background: #fff;
   box-shadow: 1px 1px 10px #b8b8b8;
-}
-
-.title {
-  color: #888888;
-}
-.title span {
-  color: #ff4d4d;
-}
-
-.subtitle {
-  line-height: 2.5rem;
-}
-
-a:hover {
-  color: #ff4d4d;
 }
 
 .button-slide {
@@ -304,6 +290,36 @@ a:hover {
   font-size: 13px;
 }
 
+main#company {
+  background: #f7f7f7 url("/assets/image/shape/shape-44.svg") no-repeat;
+}
+main#company .content {
+  text-indent: 4rem;
+  font-size: 16px;
+}
+main#company .detail {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+main#company .misi-detail li {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+main#company .misi-detail li span {
+  padding-left: 1.5em;
+}
+main#company .misi-detail li::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  margin-left: -1.5em;
+  /* same as padding-left set on li */
+  width: 1.3em;
+}
+
 footer {
   text-align: left;
   border-top: 1px solid rgba(206, 206, 206, 0.541);
@@ -364,6 +380,20 @@ footer a.faq:hover {
   header .banner .line-1 {
     width: 90%;
   }
+}
+.title {
+  color: #888888;
+}
+.title span {
+  color: #ff4d4d;
+}
+
+.subtitle {
+  line-height: 2.5rem;
+}
+
+a:hover {
+  color: #ff4d4d;
 }
 
 /*# sourceMappingURL=style.css.map */

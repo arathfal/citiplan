@@ -1,0 +1,28 @@
+main#company {
+  background: $color-gray-1 url("/assets/image/shape/shape-44.svg") no-repeat;
+  .content {
+    text-indent: 4rem;
+    font-size: 16px;
+  }
+  .detail {
+    position: relative;
+    @include centerY(-50%);
+  }
+  .misi-detail {
+    li {
+      list-style: none;
+      margin-bottom: 2rem;
+      span {
+        padding-left: 1.5em;
+      }
+      &::before {
+        content: "\f43f";
+        font-family: "Font Awesome\ 5 Free";
+        font-weight: 900;
+        display: inline-block;
+        margin-left: -1.5em; /* same as padding-left set on li */
+        width: 1.3em;
+      }
+    }
+  }
+}
