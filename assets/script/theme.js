@@ -1,4 +1,4 @@
-jQuery(document).ready(($) => {
+$(document).ready(function () {
   $(window).scroll(() => {
     if ($(document).scrollTop() > 100) {
       $(".navbar").removeClass("fadeIn");
