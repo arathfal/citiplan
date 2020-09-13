@@ -1,8 +1,3 @@
-.shrink {
-  .navbar {
-    box-shadow: 1px 1px 10px rgb(184, 184, 184);
-  }
-}
 .title {
   color: $color-dark-1;
   span {
@@ -11,9 +6,6 @@
 }
 .subtitle {
   line-height: 2.5rem;
-}
-.mb-80 {
-  margin-bottom: 80px;
 }
 a:hover {
   color: $color-red-1;
@@ -112,6 +104,43 @@ a:hover {
   }
 }
 
+#owner {
+  background: #f7f7f7 url("/assets/image/shape/shape-17.svg") right top
+    no-repeat;
+  .owner-bg {
+    position: absolute;
+  }
+  .card {
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    background: #fcfcfc;
+    box-shadow: 1px 1px 10px #e8e8e8, -1px -1px 10px #ffffff;
+    z-index: 1;
+  }
+  .owner-img {
+    border-radius: 5px;
+  }
+  .caption {
+    position: relative;
+    @include centerY(-50%);
+    .quote {
+      font-size: 17px;
+    }
+    .name {
+      font-size: 15px;
+    }
+    .job {
+      font-size: 13px;
+    }
+    .perizinan {
+      img {
+        width: 80%;
+      }
+    }
+  }
+}
+
 #recentProject {
   background: white url("/assets/image/shape/shape-31.svg") no-repeat;
   h6 {
@@ -131,4 +160,34 @@ a:hover {
 
 #whyUs {
   background: $color-gray-1 url("/assets/image/shape/shape-50.svg") no-repeat;
+  .client-slider div {
+    box-sizing: border-box;
+  }
+  .slick-slide {
+    cursor: grab;
+    outline: none;
+  }
+  .arrow-prev {
+    position: absolute;
+    left: -10px;
+    @include centerY(-45px);
+  }
+  .arrow-next {
+    position: absolute;
+    right: -10px;
+    @include centerY(-50px);
+  }
+  .arrow-prev,
+  .arrow-next {
+    z-index: 1;
+    cursor: pointer;
+    color: $color-red-2;
+  }
+  .arrow-prev:hover,
+  .arrow-next:hover {
+    color: $color-red-1;
+  }
+  figcaption {
+    font-size: 13px;
+  }
 }

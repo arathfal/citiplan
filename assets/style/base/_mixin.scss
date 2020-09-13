@@ -4,3 +4,15 @@
   -webkit-transform: translate($X, $Y);
   transform: translate($X, $Y);
 }
+
+@mixin centerX($X) {
+  left: 50%;
+  -webkit-transform: translateX($X);
+  transform: translateX($X);
+}
+
+@mixin centerY($Y) {
+  top: 50%;
+  -webkit-transform: translateY($Y);
+  transform: translateY($Y);
+}

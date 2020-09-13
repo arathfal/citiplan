@@ -1,10 +1,9 @@
 header {
   position: relative;
   min-height: 100vh;
-  background: url("/assets/image/shape/shape-50.svg") right no-repeat;
 
   .navbar {
-    background: #fff;
+    background: transparent;
     transition: 0.5s;
   }
 
@@ -31,6 +30,7 @@ header {
 
   .banner {
     position: absolute;
+    background: url("/assets/image/shape/shape-50.svg") right no-repeat;
     margin-top: 2rem;
     @include centerAll(-50%, -65%);
     h3 {
@@ -44,5 +44,35 @@ header {
       top: -20px;
       z-index: -1;
     }
+  }
+  .page-wrapper {
+    position: relative;
+    background: $color-red-3;
+    .title-page {
+      padding-top: 14rem;
+      padding-bottom: 8rem;
+      font-size: 4rem;
+    }
+    .breadcrumb {
+      border-bottom: 1px solid $color-dark-3;
+      li {
+        font-size: 18px;
+        a {
+          color: $color-red-2;
+          &:hover {
+            color: $color-red-1;
+          }
+        }
+      }
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+      content: ">";
+    }
+  }
+}
+.shrink {
+  .navbar {
+    background: #fff;
+    box-shadow: 1px 1px 10px rgb(184, 184, 184);
   }
 }

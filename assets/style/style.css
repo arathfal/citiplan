@@ -1,5 +1,7 @@
 @import url("/vendor/bootstrap-4.3.1/css/bootstrap.min.css");
 @import url("/vendor/fontawesome/css/all.min.css");
+@import url("/vendor/slick-1.8.1/slick/slick.css");
+@import url("/vendor/slick-1.8.1/slick/slick-theme.css");
 @import url("/vendor/animate.css");
 @font-face {
   font-family: "Poppins";
@@ -14,6 +16,10 @@ figure {
   padding: 0;
 }
 
+.mb-80 {
+  margin-bottom: 80px;
+}
+
 .txt-primary {
   color: #c40000;
 }
@@ -22,13 +28,16 @@ figure {
   color: #ff4d4d;
 }
 
+.txt-red-dark {
+  color: #4d0000;
+}
+
 header {
   position: relative;
   min-height: 100vh;
-  background: url("/assets/image/shape/shape-50.svg") right no-repeat;
 }
 header .navbar {
-  background: #fff;
+  background: transparent;
   transition: 0.5s;
 }
 header .navbar-brand:hover {
@@ -51,6 +60,7 @@ header button:focus {
 }
 header .banner {
   position: absolute;
+  background: url("/assets/image/shape/shape-50.svg") right no-repeat;
   margin-top: 2rem;
   top: 50%;
   left: 50%;
@@ -68,8 +78,33 @@ header .banner .line-1 {
   top: -20px;
   z-index: -1;
 }
+header .page-wrapper {
+  position: relative;
+  background: #fff5f8;
+}
+header .page-wrapper .title-page {
+  padding-top: 14rem;
+  padding-bottom: 8rem;
+  font-size: 4rem;
+}
+header .page-wrapper .breadcrumb {
+  border-bottom: 1px solid rgba(206, 206, 206, 0.541);
+}
+header .page-wrapper .breadcrumb li {
+  font-size: 18px;
+}
+header .page-wrapper .breadcrumb li a {
+  color: #4d0000;
+}
+header .page-wrapper .breadcrumb li a:hover {
+  color: #ff4d4d;
+}
+header .page-wrapper .breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
 
 .shrink .navbar {
+  background: #fff;
   box-shadow: 1px 1px 10px #b8b8b8;
 }
 
@@ -82,10 +117,6 @@ header .banner .line-1 {
 
 .subtitle {
   line-height: 2.5rem;
-}
-
-.mb-80 {
-  margin-bottom: 80px;
 }
 
 a:hover {
@@ -182,6 +213,42 @@ a:hover {
   font-size: 14px;
 }
 
+#owner {
+  background: #f7f7f7 url("/assets/image/shape/shape-17.svg") right top no-repeat;
+}
+#owner .owner-bg {
+  position: absolute;
+}
+#owner .card {
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  background: #fcfcfc;
+  box-shadow: 1px 1px 10px #e8e8e8, -1px -1px 10px #ffffff;
+  z-index: 1;
+}
+#owner .owner-img {
+  border-radius: 5px;
+}
+#owner .caption {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#owner .caption .quote {
+  font-size: 17px;
+}
+#owner .caption .name {
+  font-size: 15px;
+}
+#owner .caption .job {
+  font-size: 13px;
+}
+#owner .caption .perizinan img {
+  width: 80%;
+}
+
 #recentProject {
   background: white url("/assets/image/shape/shape-31.svg") no-repeat;
 }
@@ -201,6 +268,40 @@ a:hover {
 
 #whyUs {
   background: #f7f7f7 url("/assets/image/shape/shape-50.svg") no-repeat;
+}
+#whyUs .client-slider div {
+  box-sizing: border-box;
+}
+#whyUs .slick-slide {
+  cursor: grab;
+  outline: none;
+}
+#whyUs .arrow-prev {
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  -webkit-transform: translateY(-45px);
+  transform: translateY(-45px);
+}
+#whyUs .arrow-next {
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
+}
+#whyUs .arrow-prev,
+#whyUs .arrow-next {
+  z-index: 1;
+  cursor: pointer;
+  color: #4d0000;
+}
+#whyUs .arrow-prev:hover,
+#whyUs .arrow-next:hover {
+  color: #ff4d4d;
+}
+#whyUs figcaption {
+  font-size: 13px;
 }
 
 footer {
