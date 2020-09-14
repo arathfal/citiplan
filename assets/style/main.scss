@@ -10,6 +10,7 @@ figure {
   margin: 0;
   padding: 0;
 }
+
 .mb-80 {
   margin-bottom: 80px;
 }
@@ -22,8 +23,10 @@ figure {
 @import "./base/mixin";
 @import "./layout/header";
 @import "./layout/index";
+@import "./layout/service";
 @import "./layout/company";
 @import "./layout/footer";
+@import "./layout/animation";
 @import "./layout/responsive";
 
 .title {

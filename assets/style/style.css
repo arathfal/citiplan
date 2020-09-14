@@ -288,6 +288,61 @@ header .page-wrapper .breadcrumb-item + .breadcrumb-item::before {
   font-size: 13px;
 }
 
+.img-icons {
+  width: 200px;
+}
+
+.img-icons-bg {
+  position: absolute;
+  width: 300px;
+  margin-top: -30px;
+  animation: rotation 10s linear infinite;
+  z-index: -1;
+}
+
+.citiplan-service-title {
+  line-height: 3.5rem;
+}
+
+.web-development {
+  background: #ff4d4d;
+}
+
+.mobile-application {
+  background: #ff3d3d;
+}
+
+.service-caption,
+.service-introduction {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.service-introduction-title {
+  line-height: 3rem;
+}
+
+.service-introduction p {
+  font-size: 18px;
+  line-height: 1.8rem;
+}
+
+.service-title {
+  font-size: 3rem;
+}
+
+.service-content {
+  font-size: 14px;
+  text-indent: 3rem;
+}
+
+.service-technology-content {
+  font-size: 1.1rem;
+  color: #e2e2e2;
+}
+
 main#company {
   background: #f7f7f7 url("/assets/image/shape/shape-44.svg") repeat-y;
 }
@@ -316,6 +371,10 @@ main#company .misi-detail li::before {
   margin-left: -1.5em;
   /* same as padding-left set on li */
   width: 1.3em;
+}
+main#company button {
+  width: 200px;
+  height: 50px;
 }
 
 footer {
@@ -360,6 +419,14 @@ footer a.faq:hover {
   color: #ff4d4d;
 }
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 @media only screen and (max-width: 991px) {
   header .banner {
     margin-top: 7rem;

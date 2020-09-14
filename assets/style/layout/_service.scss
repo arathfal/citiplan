@@ -1,0 +1,45 @@
+.img-icons {
+  width: 200px;
+}
+.img-icons-bg {
+  position: absolute;
+  width: 300px;
+  margin-top: -30px;
+  animation: rotation 10s linear infinite;
+  z-index: -1;
+}
+.citiplan-service-title {
+  line-height: 3.5rem;
+}
+.web-development {
+  background: $color-red-1;
+}
+.mobile-application {
+  background: $color-red-3;
+}
+
+.service-caption,
+.service-introduction {
+  position: relative;
+  @include centerY(-50%);
+}
+.service-introduction-title {
+  line-height: 3rem;
+}
+.service-introduction {
+  p {
+    font-size: 18px;
+    line-height: 1.8rem;
+  }
+}
+.service-title {
+  font-size: 3rem;
+}
+.service-content {
+  font-size: 14px;
+  text-indent: 3rem;
+}
+.service-technology-content {
+  font-size: 1.1rem;
+  color: $color-gray-2;
+}
