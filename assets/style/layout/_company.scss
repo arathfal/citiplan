@@ -1,5 +1,6 @@
 main#company {
-  background: $color-gray-1 url("/assets/image/shape/shape-44.svg") no-repeat;
+  background: $color-gray-1 url("/assets/image/shape/shape-44.svg") fixed
+    no-repeat;
   .content {
     text-indent: 4rem;
     font-size: 16px;

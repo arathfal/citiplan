@@ -79,7 +79,7 @@ header .banner .line-1 {
 }
 header .page-wrapper {
   position: relative;
-  background: #fff5f8;
+  background: #f7f7f7;
 }
 header .page-wrapper .title-page {
   padding-top: 14rem;
@@ -289,7 +289,7 @@ header .page-wrapper .breadcrumb-item + .breadcrumb-item::before {
 }
 
 main#company {
-  background: #f7f7f7 url("/assets/image/shape/shape-44.svg") no-repeat;
+  background: #f7f7f7 url("/assets/image/shape/shape-44.svg") fixed no-repeat;
 }
 main#company .content {
   text-indent: 4rem;
