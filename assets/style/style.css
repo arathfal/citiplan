@@ -289,7 +289,7 @@ header .page-wrapper .breadcrumb-item + .breadcrumb-item::before {
 }
 
 main#company {
-  background: #f7f7f7 url("/assets/image/shape/shape-44.svg") fixed no-repeat;
+  background: #f7f7f7 url("/assets/image/shape/shape-44.svg") repeat-y;
 }
 main#company .content {
   text-indent: 4rem;
