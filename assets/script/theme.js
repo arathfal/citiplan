@@ -137,8 +137,8 @@ $(document).ready(function () {
 
   function displayRowsPageAplikasi(index) {
     var startPageAplikasi = (index - 1) * rowsPageAplikasi;
-    var endPageAplikasi = startPageAplikasi + rowsPagePlikasi;
-    data.hide();
-    data.slice(startPageAplikasi, endPageAplikasi).show();
+    var endPageAplikasi = startPageAplikasi + rowsPageAplikasi;
+    dataAplikasi.hide();
+    dataAplikasi.slice(startPageAplikasi, endPageAplikasi).show();
   }
 });
