@@ -1,42 +1,40 @@
-main#company {
-  #history,
-  .misi {
-    background: #fff;
-  }
-  .visi {
-    background: $color-gray-1;
-  }
+#history,
+.misi {
+  background: #fff;
+}
+.visi {
+  background: $color-gray-1;
+}
 
-  .content {
-    text-indent: 4rem;
-    font-size: 16px;
-  }
-  .detail {
-    position: relative;
-    @include centerY(-50%);
-  }
-  .misi-detail {
-    li {
-      list-style: none;
-      margin-bottom: 2rem;
-      span {
-        padding-left: 1.5em;
-      }
-      &::before {
-        content: "\f43f";
-        font-family: "Font Awesome\ 5 Free";
-        font-weight: 900;
-        display: inline-block;
-        margin-left: -1.5em; /* same as padding-left set on li */
-        width: 1.3em;
-      }
+.content {
+  text-indent: 4rem;
+  font-size: 16px;
+}
+.detail {
+  position: relative;
+  @include centerY(-50%);
+}
+.misi-detail {
+  li {
+    list-style: none;
+    margin-bottom: 2rem;
+    span {
+      padding-left: 1.5em;
+    }
+    &::before {
+      content: "\f43f";
+      font-family: "Font Awesome\ 5 Free";
+      font-weight: 900;
+      display: inline-block;
+      margin-left: -1.5em; /* same as padding-left set on li */
+      width: 1.3em;
     }
   }
-  a.button-slide {
-    text-align: center;
-    text-decoration: none;
-    padding-top: 12px;
-    width: 200px;
-    height: 50px;
-  }
+}
+a.button-slide {
+  text-align: center;
+  text-decoration: none;
+  padding-top: 12px;
+  width: 200px;
+  height: 50px;
 }

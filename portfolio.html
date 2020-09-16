@@ -11,7 +11,7 @@
     <title>Citiplan</title>
   </head>
   <body>
-    <header>
+    <header class="side">
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container d-flex justify-content-between">
           <a class="navbar-brand" href="index.html"
@@ -48,44 +48,55 @@
               <li class="nav-item mr-lg-4 mt-lg-1">
                 <a class="nav-link" href="portfolio.html">Portfolio</a>
               </li>
-              <li>
-                <button class="button-slide mt-3 mt-lg-0">Contact</button>
+              <li class="nav-item mt-3 mt-lg-0">
+                <a href="contact.html" class="button-slide nav-link">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="page-wrapper">
-        <h1 class="title-page txt-red-dark text-center mb-80">Portfolio</h1>
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb d-flex justify-content-center bg-white p-4">
-            <li class="breadcrumb-item">
-              <a href="index.html" class="text-decoration-none">Home</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-              Portfolio
-            </li>
-          </ol>
-        </nav>
+      <span class="shape-1"></span>
+      <span class="shape-2"></span>
+      <span class="shape-3"></span>
+      <span class="shape-4"></span>
+      <div class="page-wrapper w-100">
+        <h4 class="text-secondary">Portfolio</h4>
+        <h1 class="title-page txt-red-dark my-3">
+          <strong>STRONG PORTFOLIO</strong>
+        </h1>
+        <h5 class="text-secondary">
+          Berikut adalah kumpulan portofolio Citiplan Indonesia
+        </h5>
+        <a href="#start"
+          ><i class="fa-3x fas fa-long-arrow-alt-down text-danger"></i
+        ></a>
       </div>
     </header>
     <main>
-      <div class="container my-5">
+      <figure>
+        <img
+          src="assets/image/shape/shape-64.svg"
+          alt=""
+          class="img-fluid portfo-bg"
+        />
+      </figure>
+
+      <div id="start" class="container my-5">
         <div class="col-12 col-md-10 mx-auto">
           <section>
             <h4 class="txt-red-dark text-center mb-80">
               Jasa Konsultasi Konstruksi
             </h4>
-            <table id="tablePortfolioKonstruksi" class="table">
-              <thead class="thead-dark">
+            <table id="tablePortfolioKonstruksi" class="table-custom">
+              <thead class="portfolio-thead">
                 <tr>
-                  <th scope="col">No</th>
-                  <th scope="col">Nama Proyek</th>
-                  <th scope="col">User</th>
-                  <th scope="col" class="text-center">Tahun</th>
+                  <th>No</th>
+                  <th>Nama Proyek</th>
+                  <th>User</th>
+                  <th class="text-center">Tahun</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody class="portfolio-tbody">
                 <tr>
                   <td>1</td>
                   <td>
@@ -1852,7 +1863,7 @@
                 </tr>
               </tbody>
             </table>
-            <div class="pagination">
+            <div class="pagination mt-5">
               <ol class="page-number"></ol>
             </div>
           </section>
@@ -1860,13 +1871,13 @@
             <h4 class="txt-red-dark text-center pt-5 mt-5 mb-80">
               Jasa Konsultasi IT
             </h4>
-            <table id="tablePortfolioAplikasi" class="table">
-              <thead class="thead-dark">
+            <table id="tablePortfolioAplikasi" class="table-custom">
+              <thead class="portfolio-thead">
                 <tr>
-                  <th scope="col">No</th>
-                  <th scope="col">Nama Proyek</th>
-                  <th scope="col">User</th>
-                  <th scope="col" class="text-center">Tahun</th>
+                  <th>No</th>
+                  <th>Nama Proyek</th>
+                  <th>User</th>
+                  <th class="text-center">Tahun</th>
                 </tr>
               </thead>
               <tbody>
@@ -1953,10 +1964,26 @@
                 </tr>
               </tbody>
             </table>
-            <div class="pagination">
+            <div class="pagination mt-5">
               <ol class="page-number-aplikasi"></ol>
             </div>
           </section>
+        </div>
+      </div>
+      <figure>
+        <img
+          src="assets/image/shape/shape-66.svg"
+          alt=""
+          class="img-fluid portfo-bg-1"
+        />
+      </figure>
+      <div class="contact-banner p-5 my-5">
+        <h1 class="text-dark text-center">
+          Apakah anda memiliki sebuah proyek ?
+        </h1>
+        <h4 class="txt-red text-center my-5">Hubungi kami</h4>
+        <div class="d-flex justify-content-center">
+          <a href="contact.html" class="button-slide-2">Contact Us</a>
         </div>
       </div>
     </main>

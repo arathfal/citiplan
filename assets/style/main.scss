@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: "Poppins";
   src: url("../font/Poppins/Poppins-Regular.ttf");
@@ -24,7 +27,9 @@ figure {
 @import "./layout/header";
 @import "./layout/index";
 @import "./layout/service";
+@import "./layout/portfolio";
 @import "./layout/company";
+@import "./layout/contact";
 @import "./layout/footer";
 @import "./layout/animation";
 @import "./layout/responsive";
@@ -40,4 +45,7 @@ figure {
 }
 a:hover {
   color: $color-red-1;
+}
+button:focus {
+  outline: 0;
 }

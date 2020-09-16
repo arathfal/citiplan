@@ -2,6 +2,48 @@ header {
   position: relative;
   min-height: 100vh;
 
+  &.side {
+    .shape-1,
+    .shape-2,
+    .shape-3,
+    .shape-4 {
+      position: absolute;
+      z-index: -2;
+    }
+    .shape-1 {
+      background: $color-red-1;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      transform: translate(50px, 300px);
+      animation: move-1 20s linear infinite;
+    }
+    .shape-2 {
+      background: #ffe6ee;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      transform: translate(300px, 100px);
+      animation: move-2 20s linear infinite;
+    }
+    .shape-3 {
+      background: #ffa647;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      transform: translate(1000px, 300px);
+      animation: move-3 20s linear infinite;
+    }
+    .shape-4 {
+      background: #f7e47a;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      transform: translate(800px, 500px);
+      animation: move-4 20s linear infinite;
+    }
+  }
+
   .navbar {
     background: transparent;
     transition: 0.5s;
@@ -20,9 +62,12 @@ header {
     font-weight: 500;
     color: $color-dark-1;
   }
-  button {
+  a.button-slide {
     width: 110px;
     height: 40px;
+    color: white;
+    text-align: center;
+    padding: 8px;
     &:focus {
       outline: 0;
     }
@@ -46,27 +91,18 @@ header {
     }
   }
   .page-wrapper {
-    position: relative;
-    background: $color-gray-1;
+    position: absolute;
+    @include centerAll(-50%, -50%);
+    text-align: center;
     .title-page {
-      padding-top: 14rem;
-      padding-bottom: 8rem;
       font-size: 4rem;
     }
-    .breadcrumb {
-      border-bottom: 1px solid $color-dark-3;
-      li {
-        font-size: 18px;
-        a {
-          color: $color-red-2;
-          &:hover {
-            color: $color-red-1;
-          }
-        }
-      }
+    .tagline {
+      line-height: 2rem;
     }
-    .breadcrumb-item + .breadcrumb-item::before {
-      content: ">";
+    .fa-long-arrow-alt-down {
+      animation: down 1.2s linear infinite;
+      transform: translateY(100px);
     }
   }
 }

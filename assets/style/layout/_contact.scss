@@ -1,0 +1,33 @@
+#email,
+#judul {
+  height: 55px;
+}
+#pesan {
+  height: 140px;
+}
+
+.form-contact {
+  position: relative;
+  @include centerAll(-50%, -50%);
+  .button-slide {
+    width: 150px;
+    height: 50px;
+    border-radius: 0;
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 15px;
+  color: $color-dark-3;
+}
+input[type="email"]:focus,
+input[type="text"]:focus {
+  box-shadow: 1px 1px 5px $color-dark-3;
+  border-color: $color-dark-3;
+}
+
+textarea.form-control:focus {
+  border-color: $color-dark-3;
+  box-shadow: none;
+}
