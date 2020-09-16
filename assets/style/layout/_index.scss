@@ -128,6 +128,59 @@
   }
 }
 
+/* Table styles. */
+td,
+th {
+  text-align: left;
+  padding: 0.5rem 1rem;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ccc;
+}
+
+th {
+  background: #444;
+  color: #fff;
+}
+
+/* Pagination. */
+.pagination {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.page-number,
+.page-number-aplikasi {
+  padding: 0;
+  margin: 0 2rem;
+  list-style-type: none;
+  display: flex;
+}
+
+.page-number li a,
+.page-number-aplikasi li a {
+  color: $color-dark-1;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.page-number li a:hover,
+.page-number-aplikasi li a:hover {
+  opacity: 1;
+}
+
+.page-number li a.active,
+.page-number-aplikasi li a.active {
+  opacity: 1;
+  background: #343a40;
+  color: $color-gray-1;
+}
+
 #recentProject {
   background: white url("/assets/image/shape/shape-31.svg") no-repeat;
   h6 {

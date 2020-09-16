@@ -233,6 +233,59 @@ header .page-wrapper .breadcrumb-item + .breadcrumb-item::before {
   width: 80%;
 }
 
+/* Table styles. */
+td,
+th {
+  text-align: left;
+  padding: 0.5rem 1rem;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ccc;
+}
+
+th {
+  background: #444;
+  color: #fff;
+}
+
+/* Pagination. */
+.pagination {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.page-number,
+.page-number-aplikasi {
+  padding: 0;
+  margin: 0 2rem;
+  list-style-type: none;
+  display: flex;
+}
+
+.page-number li a,
+.page-number-aplikasi li a {
+  color: #888888;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.page-number li a:hover,
+.page-number-aplikasi li a:hover {
+  opacity: 1;
+}
+
+.page-number li a.active,
+.page-number-aplikasi li a.active {
+  opacity: 1;
+  background: #343a40;
+  color: #f7f7f7;
+}
+
 #recentProject {
   background: white url("/assets/image/shape/shape-31.svg") no-repeat;
 }
@@ -296,7 +349,7 @@ header .page-wrapper .breadcrumb-item + .breadcrumb-item::before {
   position: absolute;
   width: 300px;
   margin-top: -30px;
-  animation: rotation 10s linear infinite;
+  animation: rotation 20s linear infinite;
   z-index: -1;
 }
 
@@ -343,8 +396,12 @@ header .page-wrapper .breadcrumb-item + .breadcrumb-item::before {
   color: #e2e2e2;
 }
 
-main#company {
-  background: #f7f7f7 url("/assets/image/shape/shape-44.svg") repeat-y;
+main#company #history,
+main#company .misi {
+  background: #fff;
+}
+main#company .visi {
+  background: #f7f7f7;
 }
 main#company .content {
   text-indent: 4rem;
@@ -372,7 +429,10 @@ main#company .misi-detail li::before {
   /* same as padding-left set on li */
   width: 1.3em;
 }
-main#company button {
+main#company a.button-slide {
+  text-align: center;
+  text-decoration: none;
+  padding-top: 12px;
   width: 200px;
   height: 50px;
 }

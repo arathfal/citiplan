@@ -1,5 +1,12 @@
 main#company {
-  background: $color-gray-1 url("/assets/image/shape/shape-44.svg") repeat-y;
+  #history,
+  .misi {
+    background: #fff;
+  }
+  .visi {
+    background: $color-gray-1;
+  }
+
   .content {
     text-indent: 4rem;
     font-size: 16px;
@@ -25,7 +32,10 @@ main#company {
       }
     }
   }
-  button {
+  a.button-slide {
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
     width: 200px;
     height: 50px;
   }
