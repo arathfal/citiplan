@@ -141,4 +141,5 @@ $(document).ready(function () {
     dataAplikasi.hide();
     dataAplikasi.slice(startPageAplikasi, endPageAplikasi).show();
   }
+  AOS.init();
 });

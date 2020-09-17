@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="vendor/aos-master/dist/aos.css" />
     <link
       rel="shortcut icon"
       href="assets/image/favicon.png"
@@ -69,7 +70,7 @@
         <h5 class="text-secondary tagline">
           Menuju kesuksesan bersama dengan Citiplan
         </h5>
-        <a href="#history"
+        <a href="#start"
           ><i class="fa-3x fas fa-long-arrow-alt-down text-danger"></i
         ></a>
       </div>
@@ -79,7 +80,7 @@
         <div class="col-12">
           <div class="row">
             <div class="col-12 col-md-6">
-              <figure>
+              <figure id="start" data-aos="fade-right" data-aos-duration="1300">
                 <img
                   src="assets/image/shape/Get in touch-amico.svg"
                   alt="..."
@@ -87,7 +88,11 @@
                 />
               </figure>
             </div>
-            <div class="col-12 col-md-6">
+            <div
+              class="col-12 col-md-6"
+              data-aos="fade-left"
+              data-aos-duration="1600"
+            >
               <form action="" class="form-contact">
                 <div class="form-group">
                   <input
@@ -208,6 +213,7 @@
     <script src="vendor/jquery/jquery-3.4.1.min.js"></script>
     <script src="vendor/bootstrap-4.3.1/js/bootstrap.min.js"></script>
     <script src="vendor/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="vendor/aos-master/dist/aos.js"></script>
     <script src="assets/script/theme.js"></script>
   </body>
 </html>
