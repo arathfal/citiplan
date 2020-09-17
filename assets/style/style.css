@@ -385,6 +385,13 @@ th {
   font-size: 13px;
 }
 
+p a {
+  color: #6c757d;
+}
+p a:hover {
+  color: #ff4d4d;
+}
+
 .img-icons {
   width: 200px;
 }

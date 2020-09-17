@@ -231,3 +231,12 @@ th {
     font-size: 13px;
   }
 }
+
+p {
+  a {
+    color: #6c757d;
+    &:hover {
+      color: $color-red-1;
+    }
+  }
+}
