@@ -50,33 +50,37 @@ header.side .shape-1 {
   background: #ff4d4d;
   width: 20px;
   height: 20px;
+  top: 50%;
+  left: 5%;
   border-radius: 50%;
-  transform: translate(50px, 300px);
-  animation: move-1 20s linear infinite;
+  animation: move-1 10s linear infinite;
 }
 header.side .shape-2 {
-  background: #ffe6ee;
+  background: #f3c7d5;
+  top: 30%;
+  left: 35%;
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  transform: translate(300px, 100px);
-  animation: move-2 20s linear infinite;
+  animation: move-2 10s linear infinite;
 }
 header.side .shape-3 {
   background: #ffa647;
+  top: 40%;
+  right: 15%;
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  transform: translate(1000px, 300px);
-  animation: move-3 20s linear infinite;
+  animation: move-3 10s linear infinite;
 }
 header.side .shape-4 {
   background: #f7e47a;
+  right: 40%;
+  bottom: 20%;
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  transform: translate(800px, 500px);
-  animation: move-4 20s linear infinite;
+  animation: move-4 10s linear infinite;
 }
 header .navbar {
   background: transparent;
@@ -645,75 +649,99 @@ footer a.faq:hover {
 }
 @keyframes move-1 {
   0% {
-    transform: translate(50px, 300px) rotate(0);
+    transform: translate(0, 0);
   }
-  25% {
-    transform: translate(200px, 150px) rotate(90deg);
+  20% {
+    transform: translate(55px, -40px);
   }
-  50% {
-    transform: translate(300px, 300px) rotate(180deg);
+  40% {
+    transform: translate(120px, 0px);
   }
-  75% {
-    transform: translate(230px, 450px) rotate(270deg);
+  40% {
+    transform: translate(80px, 50px);
+  }
+  60% {
+    transform: translate(40px, 80px);
+  }
+  80% {
+    transform: translate(0, 50px);
   }
   100% {
-    transform: translate(50px, 300px) rotate(359deg);
+    transform: translate(0, 0);
   }
 }
 @keyframes move-2 {
   0% {
-    transform: translate(300px, 100px) rotate(0);
+    transform: translate(0, 0);
   }
-  25% {
-    transform: translate(500px, 200px) rotate(90deg);
+  20% {
+    transform: translate(-65px, -50px);
   }
-  50% {
-    transform: translate(600px, 400px) rotate(180deg);
+  40% {
+    transform: translate(-15px, -30px);
   }
-  75% {
-    transform: translate(450px, 300px) rotate(270deg);
+  40% {
+    transform: translate(30px, 0);
+  }
+  60% {
+    transform: translate(50px, 50px);
+  }
+  80% {
+    transform: translate(20px, 50px);
   }
   100% {
-    transform: translate(300px, 100px) rotate(359deg);
+    transform: translate(0, 0);
   }
 }
 @keyframes move-3 {
   0% {
-    transform: translate(1000px, 300px) rotate(0);
+    transform: translate(0, 0);
   }
-  25% {
-    transform: translate(1200px, 200px) rotate(90deg);
+  20% {
+    transform: translate(50px, -50px);
   }
-  50% {
-    transform: translate(1300px, 500px) rotate(180deg);
+  40% {
+    transform: translate(100px, 0);
   }
-  75% {
-    transform: translate(1200px, 400px) rotate(270deg);
+  40% {
+    transform: translate(50px, 50px);
+  }
+  60% {
+    transform: translate(0, 50px);
+  }
+  80% {
+    transform: translate(0, 25px);
   }
   100% {
-    transform: translate(1000px, 300px) rotate(359deg);
+    transform: translate(0, 0);
   }
 }
 @keyframes move-4 {
   0% {
-    transform: translate(800px, 500px);
+    transform: translate(0, 0);
   }
   25% {
-    transform: translate(900px, 400px);
+    transform: translate(-50px, -50px);
   }
   50% {
-    transform: translate(1000px, 350px);
+    transform: translate(-100px, 0);
   }
   75% {
-    transform: translate(900px, 400px);
+    transform: translate(-50px, 50px);
   }
   100% {
-    transform: translate(800px, 500px);
+    transform: translate(0, 0);
   }
 }
 @media only screen and (max-width: 991px) {
   header .banner {
     margin-top: 7rem;
+  }
+  header .page-wrapper {
+    width: 75%;
+  }
+  header .page-wrapper .title-page {
+    font-size: 3.7rem;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -721,8 +749,40 @@ footer a.faq:hover {
     margin-top: 15em;
   }
 
+  .page-wrapper {
+    width: 85%;
+  }
+  .page-wrapper .title-page {
+    font-size: 3.4rem;
+  }
+  .page-wrapper .tagline {
+    font-size: 19px;
+  }
+
   #whatWeDo {
     margin-top: 15rem;
+  }
+}
+@media only screen and (max-width: 633px) {
+  header .page-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  header .page-wrapper .title-page {
+    font-size: 2.8rem;
+  }
+  header .page-wrapper .tagline {
+    font-size: 17px;
+    line-height: 2rem;
+  }
+  header .page-wrapper .fa-long-arrow-alt-down {
+    animation: down 1.2s linear infinite;
+    transform: translateY(100px);
   }
 }
 @media only screen and (max-width: 586px) {

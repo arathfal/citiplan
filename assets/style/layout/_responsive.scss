@@ -3,6 +3,12 @@
     .banner {
       margin-top: 7rem;
     }
+    .page-wrapper {
+      width: 75%;
+      .title-page {
+        font-size: 3.7rem;
+      }
+    }
   }
 }
 @media only screen and (max-width: 767px) {
@@ -11,8 +17,38 @@
       margin-top: 15em;
     }
   }
+  .page-wrapper {
+    width: 85%;
+    .title-page {
+      font-size: 3.4rem;
+    }
+    .tagline {
+      font-size: 19px;
+    }
+  }
   #whatWeDo {
     margin-top: 15rem;
+  }
+}
+@media only screen and (max-width: 633px) {
+  header {
+    .page-wrapper {
+      position: absolute;
+      width: 100%;
+      @include centerAll(-50%, -50%);
+      text-align: center;
+      .title-page {
+        font-size: 2.8rem;
+      }
+      .tagline {
+        font-size: 17px;
+        line-height: 2rem;
+      }
+      .fa-long-arrow-alt-down {
+        animation: down 1.2s linear infinite;
+        transform: translateY(100px);
+      }
+    }
   }
 }
 @media only screen and (max-width: 586px) {
