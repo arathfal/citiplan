@@ -19,6 +19,10 @@ figure {
   margin-bottom: 80px;
 }
 
+main {
+  overflow: hidden;
+}
+
 @import url("/vendor/bootstrap-4.3.1/css/bootstrap.min.css");
 @import url("/vendor/fontawesome/css/all.min.css");
 @import url("/vendor/animate.css");

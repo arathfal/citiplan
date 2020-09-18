@@ -24,6 +24,10 @@ figure {
   margin-bottom: 80px;
 }
 
+main {
+  overflow: hidden;
+}
+
 .txt-primary {
   color: #c40000;
 }
@@ -457,14 +461,17 @@ p a:hover {
   color: #e2e2e2;
 }
 
-.table-custom .portfolio-thead th {
+.table {
+  width: 100%;
+}
+.table .portfolio-thead th {
   padding: 15px;
   background: #4d0000;
 }
-.table-custom tbody tr:nth-child(odd) td {
+.table tbody tr:nth-child(odd) td {
   background: #f7f7f7;
 }
-.table-custom tbody tr:nth-child(even) td {
+.table tbody tr:nth-child(even) td {
   background: white;
 }
 
